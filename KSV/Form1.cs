@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace KSV
@@ -15,14 +9,13 @@ namespace KSV
         public Form1()
         {
             InitializeComponent();
-            //timer1.Start();
+            timer1.Start();
+            timer2.Start();
             this.TopMost = true;
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.Size = new Size(1000, 1000);
-
-
+            this.Size = new Size(2000, 2000);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,7 +27,7 @@ namespace KSV
         {
             if (this.BackColor == System.Drawing.Color.BlueViolet)
             {
-                this.BackColor = System.Drawing.Color.Green;
+                this.BackColor = Color.Green;
             }
             else
             {
@@ -54,6 +47,8 @@ namespace KSV
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            //Закрытие приложения
+            Application.Exit();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
