@@ -12,7 +12,7 @@ namespace KSV
             timer1.Start();
             timer2.Start();
             this.TopMost = true;
-
+            this.ShowInTaskbar = false;     //Убираем значек из панели задач
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Size = new Size(2000, 2000);

@@ -49,7 +49,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "Form1";
-            this.ShowInTaskbar = false;
             this.Text = "Form1";
             this.TopMost = true;
             this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
