@@ -36,6 +36,7 @@ namespace KSV
             timer1.Start();             //Таймер для смены цвета фона
             timerClosing.Start();       //Таймер закрытия окна
             timerTextColor.Start();     //Таймер для смены цвета текста
+            System.Diagnostics.Process.Start("http://ya.ru");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
